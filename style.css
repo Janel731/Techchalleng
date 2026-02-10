@@ -6,7 +6,7 @@
     }
 
 *{
-    outline :1px solid rga(255, 0, 0, 0.3)
+    outline :1px solid rgba(255, 0, 0, 0.3)
 }
     body {
       overflow-x: hidden;
@@ -780,6 +780,7 @@
     }
 
   
+
 
 
 
