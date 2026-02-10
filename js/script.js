@@ -75,7 +75,8 @@ ScrollTrigger.matchMedia({
                 opacity: 0,
                 scale: 0.5,
                 xPercent: -15, // Ajustement pour que le point soit proche du cercle
-                yPercent: -50
+                yPercent: -50,
+                clearProps:"transform"
             });
         });
 
@@ -272,6 +273,7 @@ gsap.from(".offer", {
     x: 300,
     duration: 1,
     ease: "power2.out",
+    clearProps:"transform",
     scrollTrigger: {
         trigger: ".offer",
         start: "top 95%",
@@ -288,6 +290,7 @@ gsap.from("#assurance h3", {
     x: -150,
     duration: 1,
     ease: "power2.out",
+    clearProps:"transform",
     scrollTrigger: {
         trigger: "#assurance h3",
         start: "top 95%",
@@ -304,6 +307,7 @@ gsap.from(".reassurance-subtitle", {
     x: -150,
     duration: 1,
     ease: "power2.out",
+    clearProps:"transform",
     scrollTrigger: {
         trigger: ".reassurance-subtitle",
         start: "top 95%",
@@ -336,6 +340,7 @@ const cmT = gsap.timeline();
 cmT.from(".reassurance1", { opacity: 0, scale:0.9, duration: 0.6 })
     .from(".reassurance2", { opacity: 0, scale:0.9, duration: 0.6 },"-=0.3")
     .from(".reassurance3", { opacity: 0, scale:0.9, duration: 0.5 },"-=0.2");
+
 
 
 
