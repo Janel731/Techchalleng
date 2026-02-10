@@ -76,7 +76,7 @@ ScrollTrigger.matchMedia({
                 scale: 0.5,
                 xPercent: -15, // Ajustement pour que le point soit proche du cercle
                 yPercent: -50,
-                clearProps:"transform"
+                
             });
         });
 
@@ -340,6 +340,7 @@ const cmT = gsap.timeline();
 cmT.from(".reassurance1", { opacity: 0, scale:0.9, duration: 0.6 })
     .from(".reassurance2", { opacity: 0, scale:0.9, duration: 0.6 },"-=0.3")
     .from(".reassurance3", { opacity: 0, scale:0.9, duration: 0.5 },"-=0.2");
+
 
 
 
