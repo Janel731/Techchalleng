@@ -5,6 +5,9 @@
       --rosed: #ff69b4;
     }
 
+*{
+    outline :1px solid rga(255, 0, 0, 0.3)
+}
     body {
       overflow-x: hidden;
       background: #f5f5f5;
@@ -777,6 +780,7 @@
     }
 
   
+
 
 
 
