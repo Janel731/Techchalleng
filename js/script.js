@@ -342,7 +342,16 @@ cmT.from(".reassurance1", { opacity: 0, scale:0.9, duration: 0.6 })
     .from(".reassurance3", { opacity: 0, scale:0.9, duration: 0.5 },"-=0.2");
 
 
-
+const buttons = document.querySelectorAll("button");
+button.forEach(button =>{
+    button.addEventListener("click", {
+        Swal.fire({
+  title: "Votre requête a été prise en compte !",
+  icon: "success",
+  draggable: true
+});
+    })
+})
 
 
 
