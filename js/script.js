@@ -104,14 +104,14 @@ ScrollTrigger.matchMedia({
         // Étape 2 : Rotation Orbitale
         // On tourne le conteneur dans un sens...
         tml.to(orbit, {
-            rotation: 360,
+            rotation: 180,
             duration: 10,
             ease: "none"
         }, ">-1"); // Démarre légèrement avant la fin de l'apparition
 
         // ... ET on tourne les points dans l'autre sens pour garder le texte droit
         tml.to(points, {
-            rotation: -360,
+            rotation: -180,
             duration: 10,
             ease: "none"
         }, "<"); // Synchronisation parfaite ("<")
@@ -168,15 +168,6 @@ ScrollTrigger.matchMedia({
         });
     }
 });
-
-
-gsap.from("#peluche", {
-    opacity: 0,
-    duration: 0.8,
-    ease: "power3.out"
-})
-
-
 
 const sectTm = gsap.timeline();
 
@@ -250,7 +241,6 @@ sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrol
         trigger: ".offer",
         start: "top 95%",
         stagger: 1.3,
-        scrub:1,
         toggleActions: "play none none reverse",
         markers:false
     }
@@ -266,7 +256,6 @@ sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrol
         trigger: "#assurance h3",
         start: "top 95%",
         stagger: 1.3,
-        scrub:1,
         toggleActions: "play none none reverse",
         markers:false
     }
@@ -282,7 +271,6 @@ sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrol
         trigger: ".reassurance-subtitle",
         start: "top 95%",
         stagger: 1.3,
-        scrub:1,
         toggleActions: "play none none reverse",
         markers:false
     }
@@ -298,18 +286,13 @@ sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrol
         trigger: ".reassurance",
         start: "top 95%",
         stagger: 1.3,
-        scrub:1,
         toggleActions: "play none none reverse",
         markers:false
     }
 
 })
 
-const cmT = gsap.timeline();
 
-cmT.from(".reassurance1", { opacity: 0, scale:0.9, duration: 0.6 })
-    .from(".reassurance2", { opacity: 0, scale:0.9, duration: 0.6 },"-=0.3")
-    .from(".reassurance3", { opacity: 0, scale:0.9, duration: 0.5 },"-=0.2");
 
 
 const buttons = document.querySelectorAll("button");
@@ -322,6 +305,7 @@ buttons.forEach(button =>{
 });
     })
 })
+
 
 
 
