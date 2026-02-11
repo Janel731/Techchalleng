@@ -135,7 +135,7 @@ const cmT = gsap.timeline({
   scrollTrigger: {
     trigger: ".reassurance",
     start: "top 85%",
-    toggleActions: "play none none reverse"
+    toggleActions: "play none none none"
   }
 });
 
@@ -155,3 +155,4 @@ document.querySelectorAll("button").forEach(btn=>{
     });
   });
 });
+
