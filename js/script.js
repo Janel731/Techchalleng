@@ -176,40 +176,13 @@ gsap.from("#peluche", {
     ease: "power3.out"
 })
 
-const cards = document.querySelectorAll(".card")
 
-// cards.forEach(card =>{
-//     gsap.from(card, {
-//         opacity:0,
-//         y:25,
-//         duration:1,
-//         ease:"power2.out",
-//         scrollTrigger:{
-//             trigger:".section1",
-//             start:"top top",
-//             stagger:0.8,
-//             scrub:1,
-//             markers:true
-//         }
-//     })
-// } )
 
-gsap.from(".emot", {
-    opacity: 0,
-    y: 50,
-    duration: 0.8,
-    ease: "power1.out",
-    scrollTrigger: {
-        trigger: ".emot",
-        start: "top 85%",
-        stagger: 0.3,
-        toggleActions: "play none none reverse",
-        markers: false
-    }
+const sectTm = gsap.timeline();
 
-})
+sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrollTrigger: {trigger: ".emot", start: "top 85%", stagger: 0.3, toggleActions: "play none none reverse", markers: false}})
 
-gsap.from("#immersive-section-h3", {
+     .from("#immersive-section-h3", {
     opacity: 0,
     y: -150,
     duration: 1,
@@ -224,7 +197,7 @@ gsap.from("#immersive-section-h3", {
 
 })
 
-gsap.from(".emot-btn", {
+    .from(".emot-btn", {
     opacity: 0,
     duration: 1,
     ease: "power2.out",
@@ -238,7 +211,7 @@ gsap.from(".emot-btn", {
 
 })
 
-gsap.from("#section-offer h3", {
+   .from("#section-offer h3", {
     opacity: 0,
     y: 150,
     duration: 1,
@@ -253,7 +226,7 @@ gsap.from("#section-offer h3", {
 
 })
 
-gsap.from("#section-offer h5", {
+    .from("#section-offer h5", {
     opacity: 0,
     y: 90,
     duration: 1,
@@ -268,12 +241,11 @@ gsap.from("#section-offer h5", {
 
 })
 
-gsap.from(".offer", {
+    .from(".offer", {
     opacity: 0,
     x: 300,
     duration: 1,
     ease: "power2.out",
-    clearProps:"transform",
     scrollTrigger: {
         trigger: ".offer",
         start: "top 95%",
@@ -285,12 +257,11 @@ gsap.from(".offer", {
 
 })
 
-gsap.from("#assurance h3", {
+    .from("#assurance h3", {
     opacity: 0,
     x: -150,
     duration: 1,
     ease: "power2.out",
-    clearProps:"transform",
     scrollTrigger: {
         trigger: "#assurance h3",
         start: "top 95%",
@@ -302,12 +273,11 @@ gsap.from("#assurance h3", {
 
 })
 
-gsap.from(".reassurance-subtitle", {
+    .from(".reassurance-subtitle", {
     opacity: 0,
     x: -150,
     duration: 1,
     ease: "power2.out",
-    clearProps:"transform",
     scrollTrigger: {
         trigger: ".reassurance-subtitle",
         start: "top 95%",
@@ -319,7 +289,7 @@ gsap.from(".reassurance-subtitle", {
 
 })
 
-gsap.from(".reassurance", {
+    .from(".reassurance", {
     opacity: 0,
     
     duration: 1,
@@ -352,6 +322,7 @@ buttons.forEach(button =>{
 });
     })
 })
+
 
 
 
