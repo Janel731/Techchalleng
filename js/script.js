@@ -277,20 +277,16 @@ sectTm.from(".emot", {opacity: 0, y: 50, duration: 0.8, ease: "power1.out",scrol
 
 })
 
-    .from(".reassurance", {
-    opacity: 0,
-    
-    duration: 1,
-    ease: "power2.out",
+ gsap.from(".reassurance", {
     scrollTrigger: {
         trigger: ".reassurance",
-        start: "top 95%",
-        stagger: 1.3,
-        toggleActions: "play none none reverse",
-        markers:false
-    }
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 50
+});
 
-})
 
 
 
@@ -305,6 +301,7 @@ buttons.forEach(button =>{
 });
     })
 })
+
 
 
 
