@@ -83,9 +83,7 @@ const cmT = gsap.timeline({
   }
 });
 
-cmT.from(".reassurance1", { opacity: 0, scale: 0.9, duration: 0.6 })
-   .from(".reassurance2", { opacity: 0, scale: 0.9, duration: 0.6 })
-   .from(".reassurance3", { opacity: 0, scale: 0.9, duration: 0.5 });
+
 
 // ==================== OTHER ELEMENTS (emot, offer, final CTA) ====================
 const sectTm = gsap.timeline({ defaults: { ease: "power2.out" } });
@@ -129,3 +127,4 @@ document.querySelectorAll("button").forEach(button => {
     });
   });
 });
+
