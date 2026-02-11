@@ -654,26 +654,7 @@
       box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12) 0 8px 20px rgba(0, 0, 0, 0.04);
     }
 
-.custom-shape-divider-top-1770771401 { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    overflow: hidden; 
-    line-height: 0; 
-} 
 
-.custom-shape-divider-top-1770771401 svg { 
-    position: relative; 
-    display: block; 
-    width: calc(140% + 1.3px); 
-    height: 166px; 
-    transform: rotateY(180deg); 
-} 
-
-.custom-shape-divider-top-1770771401 .shape-fill { 
-    fill: #FFFFFF; 
-}
 
     @media screen and (max-width: 768px) {
         body{
@@ -802,6 +783,7 @@
     }
 
   
+
 
 
 
