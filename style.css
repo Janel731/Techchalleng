@@ -1,4 +1,5 @@
 
+
     :root {
       --red: #DC143C;
       --rosev: #ff1493;
@@ -95,8 +96,9 @@
 
     .para button {
       padding: 10px 15px;
-     background: rgba(255,255,255,0.85);
-
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: #ff0000;
@@ -111,12 +113,6 @@
       background: rgba(255, 255, 255, 0.25);
       box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
     }
-
-.glass {
-  background: rgba(255,255,255,0.85);
-  border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
 
     .section1 {
       min-height: 100vh;
@@ -160,7 +156,7 @@
       background: #fff;
       border-radius: 25px;
       border: #DC143C;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
       padding: 1.2rem;
       font-family: 'poppins';
       font-size: 1.3em;
@@ -262,7 +258,7 @@
       object-fit: cover;
       border-radius: 50%;
       /* Cercle parfait ou forme libre selon l'image */
-      box-shadow: 0 10px 25px rgba(164, 19, 60, 0.25);
+      box-shadow: 0 20px 50px rgba(164, 19, 60, 0.25);
       /* Animation douce de respiration */
       animation: float 6s ease-in-out infinite;
     }
@@ -322,10 +318,12 @@
     }
 
     .emot {
-     
-
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 105, 180, 0.25);
-
+      box-shadow: 0 20px 50px rgba(220, 20, 60, 0.08);
+      border-radius: 24px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -351,7 +349,12 @@
 
     .emot-btn {
       padding: 25px 30px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 105, 180, 0.45);
+      box-shadow: 0 20px 50px rgba(220, 20, 60, 0.08);
       color: #ff69b4;
       letter-spacing: 0.4px;
       transition: all 0.3s ease;
@@ -371,10 +374,14 @@
       align-items: center;
       width: 200px;
       height: 200px;
-     
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 24px;
       transform: rotate(45deg);
       margin: 35px;
-      
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.35),
+        0 0 32px rgba(164, 19, 60, 0.18);
       transform-style: preserve-3d;
     
     }
@@ -411,7 +418,12 @@
 
     .offer-btn {
       padding: 25px 30px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 105, 180, 0.45);
+      box-shadow: 0 20px 50px rgba(220, 20, 60, 0.08);
       color: #ff69b4;
       letter-spacing: 0.4px;
       transition: all 0.3s ease;
@@ -459,9 +471,13 @@
       align-items: center;
       width: 200px;
       height: 200px;
-      
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 24px;
       margin: 35px;
-      
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.35),
+        0 0 32px rgba(164, 19, 60, 0.18);
     }
 
     .reassurance p {
@@ -487,7 +503,13 @@
     }
 
     .comment {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       padding: 30px;
+      border-radius: 24px;
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.30),
+        0 0 30px rgba(164, 19, 60, 0.12);
     }
 
     .comment p {
@@ -586,10 +608,15 @@
 
     .finalcta-btn {
       padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: #ff0000;
       font-family: 'poppins';
       font-size: 1.3em;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       cursor: pointer;
       transition: all 0.3s ease;
     }
@@ -601,15 +628,9 @@
 
     footer {
       background: #fff;
-      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12) 0 8px 20px rgba(0, 0, 0, 0.04);
     }
 
-.plush-img,
-.card-section .card,
-.offer,
-.small {
-  will-change: transform;
-}
 
 
     @media screen and (max-width: 768px) {
@@ -727,8 +748,6 @@
     }
 
   
-
-
 
 
 
