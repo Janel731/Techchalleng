@@ -113,9 +113,7 @@ sectTm.from(".emot", { opacity: 0, y: 50, duration: 0.8, stagger: 0.3, scrollTri
 .from(".reassurance-subtitle", { opacity: 0, x: -150, duration: 1, scrollTrigger: {
   trigger: ".reassurance-subtitle", start: "top 95%", scrub: 1
 }})
-.from(".reassurance", { opacity: 0, duration: 1, scrollTrigger: {
-  trigger: ".reassurance", start: "top 95%", scrub: 1
-}});
+
 
 // ==================== BUTTONS ALERT ====================
 document.querySelectorAll("button").forEach(button => {
@@ -127,4 +125,5 @@ document.querySelectorAll("button").forEach(button => {
     });
   });
 });
+
 
